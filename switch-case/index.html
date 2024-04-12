@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // pedir ao usuario para digitar 1 numero de 0 a 6;
+
+        // se o numero for 0, mostrar "Domingo";
+        
+        // se número for 1, mostrar "Segunda-feira"
+
+        // se número for 2, mostrar "Terça-feira"
+
+        // ...
+
+        // se número for 6, mostrar "Sabado"
+
+        // se número for != (diferente) de 0, 1, 2... 6, mostrar "Digite um numero entre 0 e 6";
+
+
+
+        let n = prompt("Digite um número de 0 a 6");
+
+        switch(n) {
+            case "0":
+                alert("Domingo");
+                break;
+            case "1":
+                alert("Segunda-Feira");
+                break;
+            case "2":
+                alert("Terça-Feira");
+                break;
+            case "3":
+                alert("Quarta-Feira");
+                break;
+            case "4":
+                alert("Quinta-Feira");
+                break;
+            case "5":
+                alert("Sexta-Feira");
+                break;
+            case "6":
+                alert("Sabado");
+                break;
+            default:
+                alert("Numero digitado esta fora do intervalo permitido de  0 a 6");        
+        }   
+        
+
+    </script>
+</body>
+</html>

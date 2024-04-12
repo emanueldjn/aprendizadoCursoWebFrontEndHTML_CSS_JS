@@ -1,0 +1,74 @@
+OBJETOS: 
+
+--> estrutura de dados que permitem armazenar e organizar informaçãoes em forma mais complexa do que apenas usando variaveis simples.
+--> um objeto em JavaScript é uma coleção de pares chave-valor, onde cada chave é uma string unica e cada valor pode ser de qualquer tipo de dado, 
+como strings, números, booleanos, arrays, funções e atémesmo outros objetos. 
+
+//---------------------------------//
+
+--> Exemplo de como criar uma String em JavaScript: 
+
+sintaxe
+--> literal: 
+{}
+
+--> construtor:
+new Object()
+
+const pessoa = {
+    nome: "João",
+    idade: 25,
+    profissao: "Desenvolvedor"
+};
+
+--> Nesse exemplo, temos um objeto chamado "pessoa" com três pares de chave-valor:
+
+A chave "nome" tem o valor "João".
+A chave "idade" tem o valor 30.
+A chave "profissao" tem o valor "Engenheiro".
+
+//---------------------------------//
+
+--> Para acessar os valores dentro de um objeto, você pode usar a notação de ponto;
+(objeto.propriedade) ou a notação de colchetes (objeto['propriedade']), como mostrado abaixo:
+
+console.log(pessoa.nome);      // Saída: João
+console.log(pessoa['idade']);  // Saída: 30
+console.log(pessoa.profissao); // Saída: Engenheiro
+
+
+//---------------------------------//
+
+Você também pode adicionar novas propriedades a um objeto, alterar valores de propriedades existentes 
+e até mesmo excluir propriedades:
+
+pessoa.cidade = "São Paulo";  // Adicionando uma nova propriedade
+pessoa.idade = 31;             // Alterando o valor de uma propriedade existente
+delete pessoa.profissao;      // Excluindo uma propriedade
+
+console.log(pessoa); // Saída: { nome: "João", idade: 31, cidade: "São Paulo" }
+
+//--------------------------------//
+
+Além disso, os objetos em JavaScript podem conter métodos, que são funções definidas como propriedades do objeto. 
+Isso permite que os objetos realizem ações específicas. Aqui está um exemplo:
+
+
+const pessoa = {
+    nome: "João",
+    idade: 30,
+    saudacao: function() {
+        console.log("Olá, meu nome é " + this.nome + " e eu tenho " + this.idade + " anos.");
+    }
+};
+
+pessoa.saudacao(); // Saída: Olá, meu nome é João e eu tenho 30 anos.
+
+
+//---------------------------------//
+
+Em resumo, objetos em JavaScript são uma parte fundamental da linguagem, permitindo a criação de estruturas de dados complexas e organizadas, com propriedades e 
+métodos que representam entidades do mundo real de forma eficiente.
+
+
+

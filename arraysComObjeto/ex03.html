@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objeto</title>
+
+    <style>
+        body {
+            background-color: #f1f1f1;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 6px;
+        }
+
+        th + th, td + td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tabela de produtos</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Nike</td>
+                <td>R$ 99,90</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <td>Adidas</td>
+                <td>R$ 79,90</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+
+        <tbody id="tabelaProdutos">
+            <tr>
+                <td>Puma</td>
+                <td>R$ 199,90</td>
+                <td>12</td>
+            </tr >
+        </tbody>
+
+        
+    </table>
+
+    <script>
+        // Dado um array contendo 3 objetos cada um representando um produto, mostrar em uma tabela (tag <table>)
+        // o nome, preço e a quantidade em estoque de cada produto.
+
+        const  produtos = [
+            {nome: "Nike", preço: "R$99,90", qtde: 5},
+            {nome: "Adidas", preço:"R$79,90", qtde: 3},
+            {nome: "Puma", preço: "R$199,90", qtde: 12},
+            {nome: "CA", preço: "R$19,90", qtde: 12},
+            {nome: "BA", preço: "R$159,90", qtde: 12}
+        ];
+        
+        const tabelaProdutos = document.getElementById("tabelaProdutos");
+        for (i = 0; i < produtos.length; i++) {
+            tabelaProdutos.innerHTML += 
+            `<tr>
+                <td>${produtos[i].nome}</td>
+                <td>${produtos[i].preço.toFixed(2)}</td>
+                <td>${produtos[i].qtde}</td>
+            </tr>`
+        }
+
+    </script>
+</body>
+</html>

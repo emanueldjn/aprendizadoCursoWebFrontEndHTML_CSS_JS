@@ -1,0 +1,15 @@
+<script>
+    // dado um array contendo os dias da semana, mostre em um alert qual é o dia atual
+    /*
+    * 0 = Domingo
+    * 1 = Segunda-feira
+    * 2 = Terça-feira
+    * 3 ...
+    */
+
+    const diasDaSemana = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+    const hoje = new Date();
+    const diaAtual = hoje.getDay();
+
+    alert("Hoje é dia: " + diasDaSemana[diaAtual]);
+</script>

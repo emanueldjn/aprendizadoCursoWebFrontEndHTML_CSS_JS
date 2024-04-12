@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 06.1</title>
+</head>
+
+<body>
+    <script>
+        /* foi pedido para o usuário digitar dois números de 0 a 10 mas ele digitou 15.
+        como resolver? */
+
+        let n1 = parseFloat(prompt("Digite um número de 0 a 10?"));
+        let n2 = parseFloat(prompt("Digite outro número de 0 a 10"));
+
+        if (n1 <= 30 && n2 <= 10 && n1 >= 0 && n2 >= 0) {
+            let media = (n1 + n2) / 2;
+            if (media > 4 && n1 > 0 && n2 > 0) {
+                alert("Aprovado!")
+            } else {
+                alert("Reprovado!");
+            }
+        } else {
+            alert("Erro!!! Digite numeros abaixo de 10")
+        }
+
+    </script>
+</body>
+
+</html>

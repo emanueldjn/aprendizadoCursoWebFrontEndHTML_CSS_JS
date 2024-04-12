@@ -1,0 +1,29 @@
+<h1>Break vs Continue</h1>
+
+<script>
+    // utilização do BREAK e CONTINUE
+    // jogue dois dados quantas vees forem necessárias ate que a soma ds pontos dos dados seja par por 10 vezes.
+    // quantas vezes os dados foram jogador?
+
+
+
+    let dadosJogados = 0;
+    let somaPar = 0;
+
+    while (true) {
+        let dado1 = parseInt(Math.random() * 6) + 1;
+        let dado2 = parseInt(Math.random() * 6) + 1;
+
+        console.log(dado1, dado2, dadosJogados, somaPar);
+        dadosJogados++;
+
+        if ((dado1 + dado2) % 2 === 0) {
+            somaPar++
+        }
+
+        if (somaPar >= 10) {
+            break
+        }
+    }
+    console.log("Os dados foram jogados " +  dadosJogados + " vezes");
+</script>

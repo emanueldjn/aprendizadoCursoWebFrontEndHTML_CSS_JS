@@ -1,0 +1,14 @@
+<script>
+    // dado um array de numeros, crie outro array contendo os numeros multiplicados por 2;
+
+    let numeros = [4, 8, 1, 0, 4, 23, 98, 9, 100, 7];
+    let numeros2 = [];
+
+    for (i = 0; i < numeros.length; i++) {
+        let numero = numeros[i] * 2
+
+        // numeros2[numeros2.length] = numeros2 (jeito anterior de acrescentar um novo elemento);
+        numeros2.push(numero); // metodo push() empurra um novo valor no final do array 
+    }
+    console.log(numeros2);
+</script>

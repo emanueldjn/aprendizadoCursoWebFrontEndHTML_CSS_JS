@@ -1,0 +1,74 @@
+2 estruturas principais de loops: for e while;
+
+FOR 
+--> é utilizado quando se sabe quantas vezes o bloco de codigo deve ser executado:
+ex: 
+
+for (inicialização; condição, incremento/decremento); {
+
+};
+
+inicialização: onde inicializa o contador ou variavel de controle de loop;
+condição: é a condição que deve ser verdadeira para continuar o loop;
+incremento/decremento: é onde atualiza o contador ou variavel de controle para evtar loops infinitos.
+
+ex: 
+Exemplo de um loop for que imprime os números de 1 a 5:
+
+for (let i = 1; i < 5= 5; i++) {
+    console.log(i);
+}
+
+--> Um loop é uma estrutura de controle que permite que um bloco de código seja executado repetidamente até que uma condição específica seja atendida. 
+Existem diferentes tipos de loops em JavaScript, como for, while, do...while, entre outros. Se uma função contiver um loop, então esse loop será executado 
+quando a função for chamada.
+
+Aqui está um exemplo de uma função que contém um loop for:
+
+    function contarAteDez() {
+        for (let i = 0; i <= 10; i++) {
+            console.log(i);
+        }
+    }
+    contarAteDez(); // chamando a função para inciar o loop
+
+
+//----------------------------------------//
+
+WHILE
+--> é utilizado quando voce não sabe quantas vezes o bloco de codigo deve ser executado, mas sabe que deve continuar ate que uma condição seja falsa.
+Ele tem a seguinte estrutura:
+
+while (condiçao) {
+    // bloco de codigo a ser repetido
+}
+
+condição --> é a condição que deve ser verdadeira para contunar o loop.
+Exemplo de um loop while que imprime os numeros de 1 a 5:
+
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++
+}
+
+Comparação:
+O loop FOR é geralmente usado quando o número de iterações é conhecido ou fixo.
+O loop WHILE é mais apropriado quando você não sabe exatamente quantas iterações serão necessárias e quer continuar até que uma condição específica seja atendida.
+Ambos os loops são poderosos e podem ser usados de várias maneiras para criar lógicas de repetição em JavaScript.
+
+DO WHILE: 
+
+Similar ao while, mas executa ao menos uma vez, mesmo que na primeira vez, a condição seja falsa.
+
+//---------------------------------------//
+
+NUMERO RANDOMICO (numero aleatorio)
+
+Math.random()
+
+//-------------------------------------//
+
+BREAK:
+a palavra BREAK faz com que o loop seja interrompido.
+

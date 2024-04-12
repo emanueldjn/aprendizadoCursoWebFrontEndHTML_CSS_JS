@@ -1,0 +1,19 @@
+<h1>Desafio</h1>
+
+<!-- Mostre na tela os números de 0 a 100 ignorando os multiplos de 10. Porém, a cada interaçã, sorteie um numero de 1 a 100.
+se o primeiro numero motrado for divisivel pelo numero sorteado, interrompa o loop -->
+
+
+<script>
+    for (let i = 0; i <= 100; i++) {
+        if (i % 10 === 0) {
+            continue
+        }
+        console.log(i);
+        let sorteio = parseInt(Math.random() * 100) + 1;
+
+        if (i % sorteio === 0) {
+            break;
+        }
+    }
+</script>

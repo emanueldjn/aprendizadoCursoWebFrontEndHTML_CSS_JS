@@ -1,0 +1,14 @@
+Como saber qual o tipo? 
+É possivel checar o tipo, no JavaScript usando o operador --> typeof;
+
+String vazia, 0, NaN, Undefined --> convertido para FALSE;
+Números e Boolean --> convertidos para TRUE.
+
+Exemplo:
+let x = ""; // false;
+let y = "0.1" // true
+
+//----------------------------------------//
+
+Quando crio uma variavel e ela não recebe um valor = Undefined
+

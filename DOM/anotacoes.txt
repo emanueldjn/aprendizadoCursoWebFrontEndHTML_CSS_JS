@@ -1,0 +1,65 @@
+--> O que é DOM? document objet model
+é uma maneira que tem para acessar ou manipular elementos no HTML. Pode adicionar, remver ou modificar elementos e atributos HTML
+em uma pagina web depois que já foi carregada no navegador;
+
+//---------------------------------//
+
+--> por exemplo, você pode selecionar um elemento do DOM pelo seu ID e alterar seu conteúdo, estilo ou atributos:
+
+// obeter um elemento do DOM pelo seu ID
+const elemento = document.getElementById("meuElemento");
+
+// alterar o conteúdo do elemento
+elemento.textContent = "novo conteúdo";
+
+// alterar o estilo do elemento
+elemento.style.color = "#ff0000"; // vermelho
+elemento.style.fontSize = 16px
+
+// adicionar um novo atributo ao elemento
+elemento.setAttribute("novoAtributo, valor");
+
+//---------------------------------//
+
+O DOM é fundamental para a criação de aplicativos da web dinâmicos e interativos, pois permite aos desenvolvedores web 
+manipular o conteúdo e a aparência de uma página em resposta às ações do usuário ou a eventos específicos.
+
+//---------------------------------//
+
+--> textContent
+
+propriedade de objetos no DOM que representa o conteudo do texo de um nó. Isso inclui qualquer texto presente dentro desse nó, 
+bem como o texto de seus descendentes, mas exclui o conteúdo de elementos HTML que são filhos desse nó.
+
+Ex:
+
+    <div id="meuElement">
+        este é um <strong>texto</strong> de exemplo
+    </div>
+
+Se você acessar o textContent do elemento com id meuElemento usando JavaScript, obterá o seguinte:
+
+    const elemento = document.getElementById('meuElement');
+    console.log(elemento.textContent); // saída: "este é um texto de exemplo"
+
+    Observe que a formatação ou as tags HTML dentro do texto não são consideradas ao usar textContent. Ele retorna apenas o texto plano.
+
+    Ao contrário de innerHTML, que retorna o HTML dentro do elemento (incluindo tags HTML), textContent retorna apenas o texto plano, tornando-o mais seguro contra injeção de código.
+
+
+--> innerHTML
+
+<div id="meuElement">
+        este é um <strong>texto</strong> de exemplo
+    </div>
+
+Se você acessar o textContent do elemento com id meuElemento usando JavaScript, obterá o seguinte:
+
+    const elemento = document.getElementById('meuElemento');
+    console.log(elemento.innerHTML);  // Saída: "Este é um <strong>texto</strong> de exemplo."
+
+Ao contrário de textContent, que retorna apenas o texto dentro do elemento, innerHTML retorna todo o HTML dentro do elemento, incluindo as tags HTML.
+
+//---------------------------------//
+
+

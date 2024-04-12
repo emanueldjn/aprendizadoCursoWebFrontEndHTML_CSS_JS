@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03</title>
+</head>
+<body>
+    <h1>Calcular área da de uma circunferencia</h1>
+
+    <label>Raio
+        <input type="number" id="raio">
+    </label>
+
+    <button onclick="calcularArea()">Calcular Área</button>
+    <output id="output"></output>
+
+    <script>
+        // escreva um programa para calcular a área de uma circunferência. 
+        // OBS: para obter o valor de Pi, use o seguinte codigo: Math.PI
+        // experimente: console.log(Math.PI)
+        // atenção às maiúsculas. Lembre-se que JavaScript é case-sensitive; ou seja, "Pi" e "pi" são diferentes!
+
+        const raio = document.getElementById("raio");
+        const output = document.getElementById("output")
+        
+        function calcularArea() {
+            let raioValue = parseFloat(raio.value);
+            const pi = Math.PI
+            let area = pi * raioValue * raioValue
+
+            output.innerHTML = `a area da circunferencia de ${raioValue} é: ${area}`
+        }
+
+
+    </script>
+</body>
+</html>

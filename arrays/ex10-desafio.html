@@ -1,0 +1,16 @@
+<script>
+    // dado um array qualquer, mostre em um alert um boolean indicando se encontrou um dos 
+    // seguntes valores nesse array: null, undefined ou NaN;
+
+    const numeros = [2, undefined, 5, 6, 9, 10, 11];
+    let encontrou = false;
+
+    for (let i = 0; i < numeros.length; i++) {
+        let n = numeros[i];
+        if (n === null || n === undefined || n === isNaN(n)) {
+            encontrou = true;
+            break
+        }
+    }
+    alert("Encontrou Null, undefined ou NaN? " + encontrou);
+</script>

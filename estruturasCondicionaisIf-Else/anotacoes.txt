@@ -1,0 +1,13 @@
+FLUXOGRAMA BASICO: 
+
+ler n1 e n2
+converter n1 e n2 para numeros (parsInt/parseFloat)
+calcular media
+media > 4; se sim == aprovado
+se não, reprovado!
+imprimir mensagem de resultado.
+
+//---------------------------------------//
+
+if (condição verdade)
+faz algo

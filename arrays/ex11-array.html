@@ -1,0 +1,30 @@
+<script>
+    // dado um array de nome, mostre na tela todos os nomes de trás pra frente(o ultimo item do array é o primeiro da página);
+
+
+    const nomes = ["Emanuel", "Esteffany", "Isabel"];
+    
+    for (i = nomes.length - 1; i >= 0; i--) {
+        document.write(nomes[i] + "<br>");
+    }
+</script>
+
+<!--
+Primeiro, temos um array chamado nomes, que contém uma lista de nomes: ["Emanuel", "Esteffany", "Isabel"].
+
+Em seguida, utilizamos um loop for para iterar sobre os elementos do array nomes.
+
+O loop começa com i inicializado com o índice do último elemento do array, que é obtido subtraindo 1 do comprimento do array (nomes.length - 1).
+
+A condição do loop é i >= 0, o que significa que o loop continuará enquanto i for maior ou igual a 0.
+
+Em cada iteração do loop, escrevemos na tela o nome localizado no índice atual i do array nomes. Usamos document.write() para 
+exibir o nome na página HTML, seguido de <br> para que cada nome seja exibido em uma nova linha.
+
+Dentro do loop, o valor de i é decrementado em 1 (ou seja, i--), para que possamos acessar o próximo nome na próxima iteração.
+
+O loop continua até que i seja menor que 0, momento em que o loop é encerrado.
+
+Então, esse código percorre o array nomes de trás para frente, começando do último nome e terminando no primeiro,
+ e escreve cada nome na tela em uma nova linha. Isso significa que o último nome do array será o primeiro a ser exibido na tela.
+-->

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // vamos simular dois dados (0 - 6). quantas vezes é necessário jogar os dois dados até que os dois números saiam repetidos?
+
+        // jogue um dado e guarde o numero;
+
+        // jogue outro dado e guarde o numero;
+
+        // crie o contador = 0;
+
+        /* enquanto dado1 for diferente de dado2, some um ao contador
+        jogue novamente os dados */
+
+        // mostre na tela qual número se repetiu e quantas vezes os dados foram jogados
+
+        let dado1 = parseInt(Math.random() * 6 + 1);
+        let dado2 = parseInt(Math.random() * 6 + 1);
+
+        let contador = 1;
+
+        while(dado1 !== dado2) {
+            console.log(dado1, dado2);
+            contador++
+            dado1 * parseInt(Math.random() * 6 + 1);
+            dado2 * parseInt(Math.random() * 6 + 1);
+        }
+        console.log("Os dados foram jogados " + contador + " vez. E o numero repetido foi o " + dado1);
+
+
+
+    </script>
+</body>
+
+</html>

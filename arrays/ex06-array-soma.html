@@ -1,0 +1,12 @@
+<script>
+    // Dado um array de numeros, mostre num alert a soma de todos eles; 
+    
+    const numeros = [2, 31, 0, 9, 12, 75, 98, 103]; // define uma constante
+    let soma = 0;  // declara variavel 'soma' e inicializa com 0. sera usada para armazenar a soma dos numeros do array.
+
+    for (let i = 0; i < numeros.length; i++) { // inicia o loop 'for' que percorre cada elemento do array 'numeros'; variavel 'i' é usada como contador que começa em 0 e é incrementada em 1 a cada interação ate atingir o comprimento do array 'numeros.length';
+        let n = numeros[i]; // dentro do loop, variavel 'n' é declarada e atribuida o valor do elemento atual do array, acessado pelo indice 'i';
+        soma += n; // a cada interação, o valor de 'n' é somado a variavel 'soma'. Isso acumula a soma de todosos elementos do array.
+    }
+    alert("A soma dos números é: " + soma);
+</script>

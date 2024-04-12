@@ -1,0 +1,190 @@
+Função
+
+--> bloco de codigo que pode ser reaproveitado e execuado quantas vezes forem necessarias
+--> importantes pois permitem encapsular um bloco de codigo para que ele possa ser reutilizado
+
+//----------------------------//
+
+Existem várias maneiras de definir funções em JavaScript:
+
+--> Declaração de Função:
+
+    function nomeDaFuncao(parametro1, parametro2) {
+    // corpo da função
+    };
+
+--> Expressão de Função (ou arrow function):
+
+    const nomeDaFuncao = function (parametro1, parametro2) {
+    // corpo da função  
+    }
+
+--> Arrow Function (função seta);
+    
+    const nomeDaFuncao = (parametro1, parametro2) => {
+        // corpo da função
+    }
+
+//----------------------------//
+
+As funções podem receber zero ou mais parâmetros (também chamados de argumentos) e podem retornar
+um valor. O retorno é opcional e pode ser qualquer tipo de dado, incluindo números, string, objetos, arrays, booleanos ou até mesmo outras funções.
+
+//----------------------------//
+
+--> Exemplo de uma função simples que retorna a soma de dois números:
+
+    function somar (a, b) {
+        return  a + b;
+    }
+    console.log(somar(2, 3)); // saida: 5
+
+
+//----------------------------//
+
+As funções também podem ser anônimas, o que significa que elas não têm um nome e geralmente são usadas em contextos onde são passadas como argumentos
+para outras funções, como em funções de retorno de chamada (callbacks) e funções de ordem superior (higher-order functions).
+
+    const resulado = (function(a , b) {
+        return a + b;
+    }) (2, 3);
+    console.log(resulado); // saída: 5
+
+//----------------------------//
+LOOP em uma função:
+
+--> Um LOOP é uma estrutura de controle que permite que um bloco de código seja executado repetidamente até que uma condição específica seja atendida. 
+Existem diferentes tipos de loops em JavaScript, como for, while, do...while, entre outros. Se uma função contiver um loop, então esse loop será executado 
+quando a função for chamada.
+
+Aqui está um exemplo de uma função que contém um loop for:
+
+    function contarAteDez() {
+        for (let i = 0; i <= 10; i++) {
+            console.log(i);
+        }
+    }
+    contarAteDez(); // chamando a função para inciar o loop
+
+
+//----------------------------//
+
+OBS: 
+
+--> Em JavaScript, variaveis declaradas dentro de uma função são locais para essa função, o que significa que elas não são acessiveis fora dela.
+evita poluição do escopo global e problemas de colisão de nomes.
+
+--> Além disso, as funções em JavaScript são objetos de primeira classe, o que significa que elas podem ser atribuídas a variáveis, passadas como argumentos
+para outras funções e retornadas como valores de outras funções. Isso oferece grande flexibilidade e poder ao programar em JavaScript.
+
+
+//----------------------------//
+EVENTOS:
+
+--> onclick:
+é um evento em JavaScript que ocorre quando um elemento HTML é clicado. Ele é usado para executar uma função ou um bloco de código quando o usuário clica em um 
+elemento específico da página da web, como um botão, um link ou qualquer outro elemento interativo.
+
+
+--> Sintaxe:
+    elemento.onclick = function(){
+        // codigo a ser executado quando o elemento é clicado
+    };
+
+Onde "ELEMENTO" é uma referência ao elemento HTML que deve responder ao evento de clique, e function() é uma função anônima que contém o código a ser executado 
+quando o clique ocorre.
+
+Por exemplo, considere o seguinte botão HTML:
+    <button id="meuBotao">Clique aqui</button>
+
+Você pode adicionar um evento onclick a esse botão da seguinte maneira:
+
+    documento.getElementById("meuBotao).onclick = function {
+        alert("O botão foi clicado)
+    };
+
+Além disso, você também pode atribuir uma função nomeada ao evento onclick:
+
+    function botaoClicado() {
+        alert("O botão foi clicado!");
+    }
+
+    document.getElementById("meuBotao").onclick = botaoClicado;
+
+Essa abordagem é útil quando você deseja reutilizar a mesma função de clique em vários elementos HTML.
+
+* Para lidar com eventos em JavaScript, você pode usar o método addEventListener para adicionar um ouvinte de evento a um elemento específico. Por exemplo:
+
+    document.getElementById("meuElemento").addEventListener("click", function() {
+    // código a ser executado quando o elemento é clicado
+    });
+
+-- > Tipos de Eventos:
+
+1. Evento do mouse:
+2. Evento do teclado:
+3. Evento do formulário:
+4. Evento de redimensionamento do browser:
+5. Evento de mudança na URL:
+6. Evento de mudanças no DOM (Document Object Model):
+7. Evento de erro:
+8. Evento de tempo:
+9. Evento de animação:
+
+
+//----------------------------// 
+
+* ELEMENTOS VAZIOS: *
+
+--> Em JavaScript, você pode preencher os dados em elementos vazios de várias maneiras, dependendo do contexto e do objetivo específico do seu código.
+
+1. Preenchimento manual: Você pode preencher manualmente elementos vazios usando JavaScript. Por exemplo, você pode selecionar um elemento HTML usando métodos 
+como document.getElementById() ou document.querySelector(), e então definir seu conteúdo usando a propriedade innerHTML ou textContent. 
+
+Veja um exemplo:
+
+    // Seleciona um elemento div vazio com o ID "meuElemento"
+    var meuElemento = document.getElementById("meuElemento");
+
+    // Define o conteúdo do elemento
+    meuElemento.innerHTML = "Este é o conteúdo preenchido dinamicamente!";
+
+2. Dinamicamente com JavaScript: Você também pode preencher elementos vazios dinamicamente com dados gerados por JavaScript. Por exemplo, você pode recuperar 
+dados de uma fonte externa, como uma API da web, um banco de dados ou um arquivo, e então inserir esses dados em elementos vazios na sua página da web. 
+Isso é comumente feito usando AJAX para fazer solicitações HTTP e receber os dados.
+
+Veja um exemplo:
+
+    // Exemplo de preenchimento de dados dinamicamente com AJAX
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://exemplo.com/dados", true);
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            var dados = JSON.parse(xhr.responseText);
+            var meuElemento = document.getElementById("meuElemento");
+            meuElemento.innerHTML = "Dados recebidos: " + dados;
+        }
+    };
+    xhr.send();
+
+3. Frameworks e bibliotecas: Em projetos JavaScript mais complexos, você pode usar frameworks e bibliotecas como React, Angular ou Vue.js para criar componentes
+reutilizáveis que preencham automaticamente os elementos vazios com dados específicos. Esses frameworks geralmente têm recursos para renderizar e atualizar 
+o DOM de forma eficiente com base em dados dinâmicos.
+
+* OBS: A escolha da abordagem depende das necessidades do seu projeto, da fonte dos dados e da arquitetura da sua aplicação. * 
+
+//----------------------------// 
+
+--> Funções que recebem parametros:
+
+    function teste(str) { // parametro
+        alert("Função teste 2: "+ str);
+    }
+    teste ("minha string") // argumento
+
+--> função que espera receber 2 parametros:
+
+    function teste(p1, p2) {
+        alert("Função teste 3: "+ p1 + p2);
+    }
+    teste("argumento 1", "argumento 2");

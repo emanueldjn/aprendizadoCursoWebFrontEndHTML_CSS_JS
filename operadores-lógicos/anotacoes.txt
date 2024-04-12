@@ -1,0 +1,30 @@
+OPERADORES LÓGICOS: 
+
+negação --> ! ;
+E --> && ;
+OU --> || ;
+
+
+EXPRESSÕES: 
+                    &&(E)       || (ou)     
+
+false       false:  false           false
+false       true:   false           true
+true        false:  false           true
+true        true:   true            true
+
+                    ! (negação)
+false                   true
+true                    false
+
+//-------------------------------------------//
+
+NEGAÇÃO PARA TRANSFORMAR EM BOOLEANO:
+
+!true
+false;
+
+!false
+true;
+
+!!" " ; false

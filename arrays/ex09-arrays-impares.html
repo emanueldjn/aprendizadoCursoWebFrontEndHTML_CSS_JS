@@ -1,0 +1,39 @@
+<script>
+    // dado um array de numeros, mostre em um alert a soma dos numeros impares;
+
+    const numeros = [2, 3, 5, 6, 9, 10, 11];
+    let soma = 0;
+
+    for (let i = 0; i < numeros.length; i++) {
+        let n = numeros[i]
+
+        if (n % 2 !== 0) {
+            soma += n
+        }
+        
+    }
+    alert("A soma dos impares é: " + soma);
+
+</script>
+
+
+<!--
+Primeiro, temos um array chamado numeros, que contém uma lista de números: [2, 3, 5, 6, 9, 10, 11].
+
+Em seguida, declaramos uma variável soma e a inicializamos com o valor zero. 
+Esta variável será usada para armazenar a soma dos números ímpares encontrados no array.
+
+Utilizamos um loop for para iterar sobre todos os elementos do array numeros. 
+O loop começa com i = 0 e continua enquanto i for menor do que o comprimento do array numeros.
+
+Para cada iteração do loop, obtemos o valor do elemento atual do array numeros e o armazenamos na variável n.
+
+Dentro do loop, há uma condição if que verifica se o número n é ímpar. Isso é feito verificando se o resto da divisão de n por 2 não é igual a zero 
+(ou seja, n % 2 !== 0). Se for o caso, isso significa que n é ímpar.
+
+Se o número n for ímpar, adicionamos seu valor à variável soma. Isso é feito usando o operador +=, que adiciona o valor de n à variável soma.
+
+Após o término do loop, exibimos um alerta que mostra a mensagem "A soma dos ímpares é: " seguido pelo valor atual da variável soma, 
+que é a soma de todos os números ímpares no array numeros.
+
+-->

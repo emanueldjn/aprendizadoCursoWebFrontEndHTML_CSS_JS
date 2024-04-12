@@ -1,0 +1,97 @@
+o que é um array?
+-->
+Em JavaScript, um array é uma estrutura de dados que permite armazenar vários valores em uma única variável. 
+Esses valores podem ser de qualquer tipo, como números, strings, objetos, ou até mesmo outros arrays. 
+Um array em JavaScript é semelhante a uma lista de compras onde você pode colocar vários itens.
+
+OBS: Cada elemento em um array possui uma posição específica, chamada de índice, que começa em zero.
+
+Por exemplo:
+imagine que você tem um array chamado "lista_de_compras" e quer armazenar os itens que você precisa comprar no supermercado. Você pode ter algo assim:
+
+lista_de_compras = ["maçã", "banana", "leite", "pão"];
+Aqui, "maçã" está na posição 0, "banana" está na posição 1, e assim por diante.
+
+Para acessar um elemento específico em um array, você usa seu índice. Por exemplo, se você quiser acessar o segundo item da lista (que é "banana"), 
+você usaria lista_de_compras[1], porque os índices começam em 0.
+
+//------------------------------//
+sintaxe
+
+let nomes = ["João", "Maria", "Pedro"] // é um array com tres elementos
+let nomes = new Array("João","Maria","Pedro") // sintaxe função construtora 
+
+//------------------------------//
+Para criar um array em JavaScript
+
+você pode usar a seguinte sintaxe:
+var minhaLista = [valor1, valor2, valor3];
+
+Aqui está um exemplo de um array simples:
+var minhaLista = ["maçã", "banana", "laranja"];
+
+Você pode acessar elementos individuais em um array usando seus índices. O primeiro elemento tem um índice de 0, o segundo tem um índice de 1 e assim por diante. Por exemplo:
+console.log(minhaLista[0]); // Isso imprimirá "maçã"
+console.log(minhaLista[1]); // Isso imprimirá "banana"
+
+OBS: é usando bastante o loop, que é uma estrutura de repetição 
+
+//------------------------------// 
+ALTERAR UM ARRAY
+
+Você também pode alterar ou adicionar elementos em um array usando seus índices. Por exemplo:
+
+minhaLista[0] = "abacaxi"; // Alterando o primeiro elemento para "abacaxi"
+minhaLista.push("uva"); // Adicionando "uva" ao final do array
+
+//----------------------------//
+
+
+Os arrays são uma parte fundamental da linguagem JavaScript e são amplamente usados em programação para armazenar e manipular conjuntos de dados de maneira eficiente.
+
+
+//----------------------------//
+.length --> amarrar o loop ao numero de elementos do array 
+
+
+//----------------------------//
+
+são estrutura dados que podem armanezar varios valores em uma unica variavel; 
+são uteis para armazenar listas de elementos relacionados; 
+
+EXEMPLOS ABAIXO:
+
+//----------------------------//
+
+CRIANDO ARRAYS:
+
+// Função para criar um array vazio 
+    function criarArray() {
+    return [];
+}
+
+// Função para adicionar um elemento ao final do array
+    function adicionarElemento (array, elemento) {
+    array.push(elemento);
+}
+
+// Função para verificar se um elemento estpa presente no array
+    function verificarElemento(array, elemento) {
+        return array.includes(elemento);
+    }
+
+// exemplo de uso das funções
+
+let meuArray = criarArray();
+console.log("Array inicial: ", meuArray);
+
+
+adicionarElemento(meuArray, "a");
+adicionarElemento(meuArray, "b");
+adicionarElemento(meuArray, "c");
+console.log("Array após adicionar elementos:", meuArray);
+
+removerElemento(meuArray, 1); // Remove o elemento "b"
+console.log("Array após remover elemento:", meuArray);
+
+console.log("Elemento no índice 0:", acessarElemento(meuArray, 0));

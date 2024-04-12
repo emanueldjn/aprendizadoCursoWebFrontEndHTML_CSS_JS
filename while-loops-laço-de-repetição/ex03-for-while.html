@@ -1,0 +1,13 @@
+<script>
+    /* pedir ao usuario digitar um numero e mostrar a tabuada de 1 ate 1000, colocando uma linha divisoria ou quebra de linha
+    sempre que mudar de dezena */
+
+    let n = parseFloat(prompt("Digite um numero"));
+
+    for (let contador = 1; contador <= 1000; contador++) {
+        document.write(n + " x " + contador + ": " + n * contador + "<br>");
+        if (contador % 10 === 0) {
+            document.write("<hr>")
+        }
+    }
+</script>

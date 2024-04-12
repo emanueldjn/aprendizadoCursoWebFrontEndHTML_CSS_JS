@@ -1,0 +1,18 @@
+OPERADORES DE COMPARAÇÃO (operador binario):
+
+igualdade == ; (apenas valor);
+igualdade === ; (valor e tipo);
+diferente != ; (apenas valor);
+diferente !== ; (valor e tipo);
+menor que < ; 
+menor ou igual à <= ;
+maior que > ;
+maior ou igual à >= ;
+
+ATENÇÃO: 
+
+Um sinal de igual nunca é comparação, mas sim atribuição!
+
+O operador => não é operador de comparação, mas sim uma notação para arrow function em Javascript.
+
+//----------------------------------------//

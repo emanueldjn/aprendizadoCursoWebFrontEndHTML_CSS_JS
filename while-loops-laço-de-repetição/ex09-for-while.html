@@ -1,0 +1,17 @@
+<h1>Anos bissextos</h1>
+
+<!-- Mostre na tela todos os anos bissextos sgundo a regra do mundo real. Utilize os controladores de fluxos break e/ou continue
+caso queira (opcinal). -->
+
+
+<script>
+    for (let ano = 1004; ano <= 2024; ano += 4) {
+        let anoBissexto = ano % 100 != 0 || ano % 400 === 0
+
+        if (anoBissexto) {
+            console.log(ano, "é um ano bissexto");
+        } else {
+            console.log(ano, "não é ano biessexto");
+        }
+    }
+</script>

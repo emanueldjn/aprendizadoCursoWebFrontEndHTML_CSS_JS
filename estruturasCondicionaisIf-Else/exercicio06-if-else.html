@@ -1,0 +1,37 @@
+!
+<!DOCTYPE html>
+ <html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF E ELSE</title>
+</head>
+
+<body>
+    <h1>if e else</h1>
+    <script>
+        /* pedir para o usuario digitar 2 números e mostrar a mensagem "aprovado!!"
+        caso a media seja maior que 4 e nenhuma nota seja igual a 0. 
+
+        mostre a mensagem "Reprovado!" caso a média seja menor ou igual a 4
+        ou exista pelo menos uma nota igual à 0; */
+
+
+        let n1 = parseFloat(prompt("Digite sua primeira nota"));
+        let n2 = parseFloat(prompt("Digite sua segunda nota"));
+
+        let media = (n1 + n2) / 2;
+        
+        if (media > 4 && n1 > 0 && n2 > 0) {
+            // bloco da verdade
+            alert(media + " Aprovado!")
+        } else {
+            // bloco da mentira
+            alert(media + " Reprovado!");
+        }
+    
+    </script>
+</body>
+
+</html>

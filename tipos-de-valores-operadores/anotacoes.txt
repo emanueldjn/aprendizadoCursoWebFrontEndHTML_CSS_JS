@@ -1,0 +1,54 @@
+TIPOS DE VALORES
+- tudo que vem da interface grafica do usuario, é texto;
+
+Uma variavel pode armazenar um var dos tipos:
+- string (texto);
+- number (numerico, decimal ou inteiro); int ou float
+- boolean (true o false);
+
+//----------------------------------------//
+
+OPERADORES ARITIMÉTICOS;
+- somar (+)
+- subtrair (-)
+- multiplicar (*)
+- dividir  (/)
+- resto da divisão ou modulo (%)
+
+ORDEM DE  PRECEDENCIA DOS OPERADORES:
+
+exponenciação:  **   --> elevado a uma potência. ex: 4 ** 2 = 16;
+multiplicação: *    --> multiplica dois numeros. ex: 5 * 3 = 15;
+divisão:        /    --> divide dois numeros. ex: 8 / 2 = 4
+resto ou modulo: %    --> retorna o  resto da divisao de dois numeros. ex: 7 % 2 = 1;
+adição: + --> adiciona numeros. ex:  2 + 3 = 5;
+subtração: - --> retira um numero de outro. ex:  5 - 3 = 2;
+
+//----------------------------------------//
+
+OPERADORES DE ATRIBUIÇÃO:
+
+atribuição --> =                ex: x = 10;
+adição      --> +=              ex: x += 10;
+subtração   --> -=              ex: x -= 10;
+multiplicação --> *=            ex: x *= 10;
+divisão     --> /=              ex: x /= 10;
+resto       --> %=              ex: x %= 10;
+elevado     --> **=             ex: x **= 2;
+
+//----------------------------------------//
+
+OPERADORES INCREMENTO E DECREMENTO:
+
+incremento --> pós fixado: ++; ex: i++;
+decremento --> pós fixado: --; ex: i--;
+
+incremento --> pré fixado: ++; ex: ++i;
+decremento --> pré fixado: --; ex: --i;
+
+//----------------------------------------//
+
+CONVERSÃO ENTRE TIPOS
+Number("3.3") converte texto para numero
+parseInt()
+parseFloat() - mais usado porque acrescenta os decimais

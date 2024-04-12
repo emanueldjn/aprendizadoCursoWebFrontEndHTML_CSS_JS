@@ -1,0 +1,9 @@
+- variavel (var/let): como uma caixa que serve pra guardar um unico dado;
+* constantes (const): como uma caixa que depois que guardamos algo, não podemos mais alterar o conteudo.
+
+//--------------------------------------//
+
+
+
+
+

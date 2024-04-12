@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Função</h1>
+
+    <input type="number" id="number" value="1">
+    
+    <!-- Botão para mostrar a tabuada -->
+    <button onclick="mostrarTabuada()">Mostrar tabuada</button>
+    <!-- Botão para limpar a tabuada -->
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+    
+    <div id="output"></div>
+
+    <script>
+        // Em uma tela contendo um input e um botão, permitir que o usuario digite um numero e, ao clicar no botão
+        // MOSTRAR a tabuada desse número na tela de 1 a 100;
+        // Incluir botão para limpar tabuada previamente mostrada na tela e sempre que mostrar a tabuada, limpar 
+        // o conteudo previamente inserido na tela;
+        // OBS: TER ATENÇÃO NA ORDEM DE EVENTOS;  
+
+
+
+        // Selecionando elementos HTML
+        const input = document.getElementById("number")
+        const output = document.getElementById("output")
+
+        // Variável para armazenar a tabuada
+        let tabuadaHTML = ""
+        
+        // Função para mostrar a tabuada
+        function mostrarTabuada() {
+            // Obtém o valor digitado e converte para número
+            const inputValue = parseFloat(input.value)
+            
+            // Limpa a tabuada anteriormente gerada
+            limparTabuada()
+
+            // Loop para calcular a tabuada do número digitado
+            for (let i = 1; i <= 100; i++) {
+                // Constrói a linha da tabuada e a adiciona à variável tabuadaHTML
+                tabuadaHTML += `${i} x ${inputValue} = ${i * inputValue} <br>`
+            }
+            // Exibe a tabuada na página
+            output.innerHTML = tabuadaHTML
+        }
+
+        // Função para limpar a tabuada
+        function limparTabuada() {
+            // Limpa a variável tabuadaHTML
+            tabuadaHTML = ""
+             // Limpa o conteúdo da div de saída
+            output.innerHTML = ""
+        }
+        // Chama a função mostrarTabuada para exibir a tabuada inicialmente
+        mostrarTabuada()
+
+    </script>
+</body>
+
+</html>
